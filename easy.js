@@ -1099,15 +1099,15 @@ const alphabetPosition = text => text.toLowerCase().split('')
 
 
 function change(x, times) {
-    let tempArr = new Array(...x)
+    let temp = new Array(...x)
     for (let i = 0; i < x.length; i++) {
         let j = 1;
         while (j <= times) {
             if (i >= j && i < x.length - j) {
-                tempArr[i]--;
+                temp[i]--;
             }
             j++;
         }
     }
-    return tempArr;
+    return temp;
 }
